@@ -16,12 +16,17 @@ export const mainRoutes = [{
 
 export const adminRoutes = [{
     path:'/admin/dashboard',
-    component:Index
+    component:Index,
+    isShow:true,
+    title:"Dashboard"
 },{
     path:'/admin/products',
     component:List,
-    exact:true
+    exact:true,
+    isShow:true,
+    title:"Products"
 },{
     path:'/admin/products/edit/:id',
-    component:Edit
+    component:Edit,
+    isShow:false
 }]
